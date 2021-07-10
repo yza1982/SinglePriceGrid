@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+$Colors: (
+  "cyan": hsl(179, 62%, 43%),
+  "brightYellow": hsl(71, 73%, 54%),
+  "lightGrey": hsl(204, 43%, 93%),
+  "grayishBlue": hsl(218, 22%, 67%),
+);
+
+$fontWeights: (
+  "reg": 400,
+  "bold": 700,
+);
+
+@mixin Large {
+  @media only screen and (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin Small {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin XSmall {
+  @media only screen and (max-width: 400px) {
+    @content;
+  }
+}
