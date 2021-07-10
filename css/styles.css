@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  overflow: visible;
+}
+
+button {
+  background-color: #c0df34;
+  color: #e5eff5;
+  font-size: 1.2em;
+  font-weight: 700;
+  width: 100%;
+  height: 3.5em;
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: transparent;
+  border: #c0df34 2px solid;
+  color: #c0df34;
+}
+
+main {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    padding: 2em 0;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main {
+    padding: 1.5em 0;
+  }
+}
+
+.titles {
+  font-size: 1.6em;
+  font-weight: 700;
+  margin-bottom: 1.5em;
+}
+
+@media only screen and (max-width: 400px) {
+  .titles {
+    margin-bottom: 1em;
+  }
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+section {
+  padding: 2em 3em;
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    padding: 2em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  section {
+    padding: 1.5em;
+  }
+}
+
+.wrapper {
+  overflow: visible;
+  max-width: 720px;
+  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[2];
+  -ms-grid-columns: (1fr)[2];
+      grid-template: repeat(2, auto)/repeat(2, 1fr);
+  -webkit-box-shadow: #98a6bd 2px 5px 1em;
+          box-shadow: #98a6bd 2px 5px 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    -ms-grid-rows: (auto)[3];
+    -ms-grid-columns: 1fr;
+        grid-template: repeat(3, auto)/1fr;
+    max-width: 384px;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .wrapper {
+    max-width: 80%;
+  }
+}
+
+.wrapper-header {
+  grid-column: 1 / -1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  background-color: #e5eff5;
+  border-radius: 10px 10px 0 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper-header {
+    grid-column: auto;
+  }
+}
+
+.wrapper-header p {
+  color: #98a6bd;
+}
+
+.wrapper-header-header {
+  color: #2ab2af;
+}
+
+.wrapper-header-subheader {
+  color: #c0df34;
+  margin-bottom: 1em;
+}
+
+.wrapper-sub {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  background-color: #2ab2af;
+  color: #e5eff5;
+  border-radius: 0 0 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper-sub {
+    grid-column: auto;
+    grid-row: auto;
+    border-radius: 0;
+  }
+}
+
+.wrapper-sub h2 {
+  font-size: 2.2em;
+  margin-bottom: 0.5em;
+}
+
+.wrapper-sub h2 span {
+  color: #c7cedb;
+  font-size: 0.5em;
+  font-weight: 400;
+}
+
+.wrapper-sub p {
+  margin-bottom: 2em;
+}
+
+.wrapper-about {
+  grid-column: auto;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  background-color: #2fcac8;
+  color: #e5eff5;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper-about {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+.wrapper-about p {
+  line-height: 1.7em;
+}
+/*# sourceMappingURL=styles.css.map */
